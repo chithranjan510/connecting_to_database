@@ -1,3 +1,8 @@
+h1 {
+  text-align: center;
+  color: white;
+}
+
 section {
   margin: 1rem auto;
   width: 90%;
