@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 
 import MoviesList from './components/MoviesList';
+import Form from './components/Form';
 import './App.css';
+
 
 let timeoutId;
 
@@ -72,6 +74,7 @@ function App() {
 
   return (
     <React.Fragment>
+      <Form />
       <section>
         <button onClick={fetchMoviesHandler}>Fetch Movies</button>
         {isRetrying && <button onClick={retryingHandler}>Stop Retrying</button>}
